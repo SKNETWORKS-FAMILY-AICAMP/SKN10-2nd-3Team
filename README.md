@@ -6,6 +6,8 @@
 ## 프로젝트 주제
 <br/>
 
+## 프로젝트 목표
+
 
 **가입 고객 이탈 예측 조회 시스템**
 <br/>
@@ -15,14 +17,67 @@
 <br/>
 <br/>
 
-## 🌟 프로젝트 팀 및 역할
-<br/>
+## 팀 소개
+<table>
+  <tr>
+    <th>김현수</th>
+    <th>박현준</th>
+    <th>정소열</th>
+    <th>신민주</th>
+    <th>조현정</th>
+    <th>전서빈</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
 
 
-| 신정우 | 김재혁 | 박예슬 | 신정우 | 남궁승원 | 홍승표
-
-
-<br/>
+  </tr>
+  <tr>
+    <th>팀장</th>
+    <th>팀원</th>
+    <th>팀원</th>
+    <th>팀원</th>
+    <th>팀원</th>
+    <th>팀원</th>
+  </tr>
+  <tr>
+    <th> 
+      <b>프로젝트 총괄</b><br>
+      <b>데이터 분석</b><br>
+      <b>모델 평가</b>
+    </th>
+    <th>
+      <b>RF 모델 개발</b><br>
+      <b>화면 개발</b><br>
+      <b>GitHub 업데이트</b>
+    </th>
+    <th>
+      <b>XGBoost 모델 개발</b><br>
+      <b>성능 분석</b><br>
+      <b>화면 설계</b>
+    </th>
+    <th>
+      <b>ExtraTree 모델 개발</b><br>
+      <b>성능 분석</b><br>
+      <b>모듈화</b>
+    </th>
+    <th>
+      <b>LightGBM 모델 개발</b><br>
+      <b>성능 분석</b><br>
+      <b>화면 개발</b>
+    </th>
+    <th>
+      <b>SVM 모델 개발</b><br>
+      <b>성능 분석</b><br>
+      <b>화면 개발</b>
+    </th>
+  </tr>
+</table>
 
 ## 📌기술스택
 ![Image](https://github.com/user-attachments/assets/2ff90937-1572-4922-8117-42ec1958e8a2)
@@ -33,3 +88,18 @@
 
 
 <br/>
+
+---
+
+## 1. 데이터 분석 및 전처리
+
+### 1.1 데이터셋 개요
+| 항목 | 내용 |
+|------|------|
+| 총 고객 수 | 7,043명 |
+| 이탈률 | 26.54% |
+| 고객 유지 기간 | 0-72개월 |
+| 결측치 | TotalCharges 11건 (0.16%) |
+| 특성 수 | 원본 21개 → 최종 6개 |
+
+
