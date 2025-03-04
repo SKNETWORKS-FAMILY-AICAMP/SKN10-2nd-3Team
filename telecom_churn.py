@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import shap
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.linear_model import LogisticRegression
@@ -100,4 +101,31 @@ for metric in metrics:
     plt.legend()
     plt.grid(True)
     plt.show()
+
+# 📌 Feature Importance 분석 (RandomForest & XGBoost)
+feature_importance = {}
+
+for name, model in models.items():
+    if hasattr(model, "feature_importances_"):  # RandomForest, XGBoost 지원
+        feature_importance[name] = model.feature_importances_
+
+for name in feature_importance:
+    sorted_idx = np.argsort(feature_importance[name])[::-1]
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=np.array(X.columns)[sorted_idx][:10], y=feature_importance[name][sorted_idx][:10])
+    plt.xlabel("Features")
+    plt.ylabel("Importance Score")
+    plt.title(f"Top 10 Feature Importance ({name})")
+    plt.xticks(rotation=45)
+    plt.show()
+
+# 📌 SHAP 분석 (XGBoost 모델 사용)
+explainer = shap.Explainer(models["XGBoost"], X_train)
+shap_values = explainer(X_test)
+
+# 📌 SHAP Summary Plot (Scatter)
+shap.summary_plot(shap_values, X_test, feature_names=X.columns.tolist())  # 🔥 Feature 이름 반영
+
+# 📌 SHAP Summary Plot (Bar Chart)
+shap.summary_plot(shap_values, X_test, plot_type="bar", feature_names=X.columns.tolist())  # 🔥 Feature 이름 반영
 
