@@ -6,7 +6,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 MODEL_DIR = os.path.join(DATA_DIR, 'models')
 
 # 모델 설정
-MODEL_VERSION = 'v1_rf'
+MODEL_VERSION = 'v1'
 MODEL_FILENAME = f'model_{MODEL_VERSION}.pkl'
 MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILENAME)
 

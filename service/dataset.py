@@ -6,8 +6,10 @@ from sklearn.model_selection import train_test_split
 from utils import reset_seeds
 from config import DATA_PATH
 from imblearn.over_sampling import SMOTE
+from imblearn.combine import SMOTEENN
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
+
 
 # 트레인 데이터 로드
 def __load_data() -> pd.DataFrame:
@@ -16,8 +18,7 @@ def __load_data() -> pd.DataFrame:
     return data
 
 def __process_drop(train, val, test):
-    drop_cols = ['customerID','StreamingTV', 'StreamingMovies',
-                 'OnlineSecurity', 'OnlineBackup','DeviceProtection',]
+    drop_cols = ['customerID', ]
 
     train.drop(drop_cols, axis=1, inplace=True) # 모델이 학습하는데 사용하는 데이터
     val.drop(drop_cols, axis=1, inplace=True) # 모델의 학습을 평가(잘했는지?? 못했는지??)하기 위한 데이터
@@ -34,8 +35,8 @@ def __fill_na(train, val, test):
 def __preprocess_resample(train, val, test):
     print("__preprocess_resample start")
     print(f"train.shape: {train.shape} / test.shape: {val.shape}")
-    X_train, y_train = SMOTE().fit_resample(train.drop(['Churn'], axis=1), train['Churn'])
-    X_val, y_val = SMOTE().fit_resample(val.drop(['Churn'], axis=1), val['Churn'])
+    X_train, y_train = (train.drop(['Churn'], axis=1), train['Churn'])
+    X_val, y_val = (val.drop(['Churn'], axis=1), val['Churn'])
     X_test = test.drop(['Churn'], axis=1)
     y_test = test['Churn']
 
@@ -46,7 +47,8 @@ def __preprocess_resample(train, val, test):
 def __preprocess_label_encoding(train, val, test):
     results = []
 
-    cat_features = []
+    cat_features = ['StreamingTV', 'StreamingMovies',
+                 'OnlineSecurity', 'OnlineBackup','DeviceProtection',]
 
     # Remove categorical features from normal columns
     normal_cols = list(set(train.columns) - set(cat_features))
@@ -98,7 +100,8 @@ def __preprocess_label_encoding(train, val, test):
 def __preprocess_dummy_encoding(train, val, test):
     results = []
 
-    cat_features = ['PaymentMethod',
+    cat_features = [
+                 'PaymentMethod',
                     'MultipleLines', 'InternetService', 'Contract',
                     'TechSupport', ]
 
@@ -138,7 +141,14 @@ def __preprocess_dummy_encoding(train, val, test):
 
     return results[0], results[1], results[2]
 
+def __preprocess_bin(train, val, test) : 
+  bin_categories = []
+  for category in bin_categories:
+    train[category] = train[category].apply(lambda x: x//1000)
+    val[category] = val[category].apply(lambda x: x//1000)
+    test[category] = test[category].apply(lambda x: x//1000)
 
+  return train, val, test
 
 def __preprocess_yn (train, val, test):
   yn_categories = ['gender', 'Partner', 'Dependents','PhoneService', 'PaperlessBilling','Churn']
@@ -149,6 +159,7 @@ def __preprocess_yn (train, val, test):
 
   return train, val, test
 
+
 def __preprocess_data(train, val, test):
     print(f'before: {train.shape} / {test.shape}')
     # 필요없는 컬럼 제거
@@ -156,8 +167,13 @@ def __preprocess_data(train, val, test):
     train, val, test = __fill_na(train,val,test)
 
     # 범주형 처리
-    #train, val, test = __preprocess_label_encoding(train, val, test)
-    return __preprocess_dummy_encoding(train, val, test)
+    train, val, test = __preprocess_label_encoding(train, val, test)
+    train, val, test = __preprocess_dummy_encoding(train, val, test)
+
+    # bin 처리
+    train, val, test = __preprocess_bin(train, val, test)
+
+    return train, val, test
 
 
 @reset_seeds

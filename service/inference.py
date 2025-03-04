@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 from dataset import preprocess_dataset
 from sklearn.metrics import f1_score
+from sklearn.metrics import accuracy_score
 from config import MODEL_PATH
 
 
@@ -29,8 +30,10 @@ def predict_and_submit():
     # 예측 수행
     y_pred = model.predict(X_test)
     f1 = f1_score(y_test, y_pred)
+    acc = accuracy_score(y_test, y_pred)
 
     print(f'test f1 score : {f1}')
+    print(f'test acc score : {acc}')
 
 
 
