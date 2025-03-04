@@ -5,8 +5,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from utils import reset_seeds
 from config import DATA_PATH
-from imblearn.over_sampling import SMOTE
-from imblearn.combine import SMOTEENN
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
 
