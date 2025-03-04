@@ -44,7 +44,8 @@ def predict_and_submit():
                               display_labels=['Stay','Churn'])
     disp.plot()
     plt.title('XGBoost Confusion Matrix')
-    plt.savefig('cm.png')
+    plt.tight_layout()
+    plt.savefig('screenshot/xgboost_cm.png')
     plt.show()
 
 
