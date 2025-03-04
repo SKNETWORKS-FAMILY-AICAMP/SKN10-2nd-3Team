@@ -4,6 +4,7 @@ from dataset import preprocess_dataset
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 from config import MODEL_PATH
 
@@ -45,9 +46,25 @@ def predict_and_submit():
     disp.plot()
     plt.title('XGBoost Confusion Matrix')
     plt.tight_layout()
-    plt.savefig('screenshot/xgboost_cm.png')
+    plt.savefig('screenshot_xgboost/xgboost_cm.png')
     plt.show()
 
+    # roc auc graph
+    y_scores = model.predict_proba(X_test)[:, 1]
+    fpr, tpr, thresholds = roc_curve(y_test, y_scores)
+    roc_auc = auc(fpr, tpr)
+
+    plt.figure()
+    plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC curve (AUC = {roc_auc:.2f})')
+    plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.0])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('ROC-AUC Curve')
+    plt.legend(loc='lower right')
+    plt.savefig('screenshot_xgboost/xgboost_roc_auc.png')
+    plt.show()
 
 
     return True
