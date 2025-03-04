@@ -3,6 +3,8 @@ import pandas as pd
 from dataset import preprocess_dataset
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 from config import MODEL_PATH
 
 
@@ -16,6 +18,7 @@ def load_model():
     except Exception as e:
         print(f"모델 로드 실패: {e}")
         return None
+
 
 def predict_and_submit():
     """테스트 데이터에 대한 예측을 수행하고 제출 파일을 생성합니다."""
@@ -35,6 +38,14 @@ def predict_and_submit():
     print(f'test f1 score : {f1}')
     print(f'test acc score : {acc}')
 
+    # confusion matrix
+    cm = confusion_matrix(y_test,y_pred)
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+                              display_labels=['Stay','Churn'])
+    disp.plot()
+    plt.title('XGBoost Confusion Matrix')
+    plt.savefig('cm.png')
+    plt.show()
 
 
 
