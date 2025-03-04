@@ -61,7 +61,7 @@ def predict_and_submit():
     plt.ylim([0.0, 1.0])
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
-    plt.title('ROC-AUC Curve')
+    plt.title('XGBoost ROC-AUC Curve')
     plt.legend(loc='lower right')
     plt.savefig('screenshot_xgboost/xgboost_roc_auc.png')
     plt.show()
