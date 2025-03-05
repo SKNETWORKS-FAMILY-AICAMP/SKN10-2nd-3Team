@@ -92,6 +92,10 @@ train["Fiber_Optic"] = (train["InternetService"] == "Fiber optic").astype(int)
 test["Fiber_Optic"] = (test["InternetService"] == "Fiber optic").astype(int)
 ori_te["Fiber_Optic"] = (ori_te["InternetService"] == "Fiber optic").astype(int)
 
+train["Long_term_customer"] = (train["tenure"] >=24).astype(int)
+test["Long_term_customer"] = (test["tenure"] >=24).astype(int)
+ori_te["Long_term_customer"] = (ori_te["tenure"] >=24).astype(int)
+
 # Fiber_Optic 새로 만들었으므로 기존 컬럼 삭제
 train.drop(["InternetService"], axis=1, inplace=True)
 test.drop(["InternetService"], axis=1, inplace=True)
@@ -178,9 +182,20 @@ print(f'{model_lgbm_V2} : {score_tr_lgbm}, {score_te_lgbm}')
 y_pred = model_lgbm_V2.predict_proba(X_te)[:, 1]  # 1일 확률 (이탈 확률)
 
 y_te = y_te.map({'No': 0, 'Yes': 1})
-# 2️⃣ AUC 계산
+
+# 2️⃣ AUC 계산 및 그래프 생성
 fpr, tpr, thresholds = roc_curve(y_te, y_pred)
 auc_te = auc(fpr, tpr)
+
+plt.figure(figsize=(7, 5))
+plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'AUC = {auc_te:.4f}')
+plt.plot([0, 1], [0, 1], color='navy', lw=1, linestyle='--')  # 대각선 기준선
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('ROC Curve')
+plt.legend(loc='lower right')
+plt.show()
+
 print(f'{model_lgbm_V2}: AUC = {auc_te:.4f}')
 
 # 3️⃣ Threshold 조정 후 새로운 예측값 생성
@@ -197,4 +212,17 @@ sns.heatmap(norm_conf_mx, annot=True, cmap="coolwarm", linewidth=0.5, fmt=".2f")
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.title(f'Confusion Matrix (Threshold = {threshold})')
+plt.show()
+
+# 중요도 상위 10개 피처 추출
+df_feature_importances = pd.DataFrame(model_lgbm_V2.feature_importances_, X_tr.columns).sort_values(by=[0], ascending=False).reset_index()
+top_10_features = df_feature_importances.head(10)
+
+# 막대 그래프 그리기
+plt.figure(figsize=(10, 6))
+sns.barplot(y=top_10_features[0], x=top_10_features['index'], color='Blue')
+plt.xlabel('Feature Importance')
+plt.ylabel('Feature')
+plt.title('Top 10 Feature Importances (LightGBM)')
+plt.xticks(rotation=45)
 plt.show()
