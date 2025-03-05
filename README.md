@@ -176,6 +176,9 @@ Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 **XGBoost**
 - <br/>
 
+**Ensemble**
+- <br/>
+
 
 
 ## 5. 참여도중 문제점과 해결점
