@@ -132,7 +132,7 @@ for metric in metrics:
     plt.title(f"Model {metric.capitalize()} Across Epochs")
     plt.legend()
     plt.grid(True)
-    plt.savefig('screenshot_xgboost/metrics_xgboost.png')
+    plt.savefig(f'screenshot_xgboost/{metric}_xgboost.png')
     #plt.show()
 
 # 📌 Feature Importance 분석
