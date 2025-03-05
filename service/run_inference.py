@@ -5,6 +5,9 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.metrics import roc_curve, auc
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import log_loss
 import matplotlib.pyplot as plt
 from config import MODEL_PATH
 
@@ -35,9 +38,15 @@ def predict_and_submit():
     y_pred = model.predict(X_test)
     f1 = f1_score(y_test, y_pred)
     acc = accuracy_score(y_test, y_pred)
+    pre = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    logloss = log_loss(y_test, y_pred)
 
     print(f'test f1 score : {f1}')
     print(f'test acc score : {acc}')
+    print(f'test precision score: {pre}')
+    print(f'test recall score : {recall}')
+    print(f'test log loss : {logloss}')
 
     # confusion matrix
     cm = confusion_matrix(y_test,y_pred)
