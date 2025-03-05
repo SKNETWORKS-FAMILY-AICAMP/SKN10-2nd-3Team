@@ -30,10 +30,10 @@
   </tr>
   <tr>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
-    <td align="center"><img src=![alt text](image-1.png) width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
+    <td align="center"><img src="https://files.oaiusercontent.com/file-H2Vqh4smeReJX9NR5CV8pY?se=2025-03-05T00%3A52%3A30Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4fd33ec4-2e8c-474f-b5bc-bec372f881ab.webp&sig=Jp/BxN/ONpTgl2dsqEwbrZWk1ItGIrhjJgt5P9oYCog%3D" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
   </tr>
   <tr>
@@ -93,14 +93,14 @@
 
 ## 1 데이터셋 개요
 
-Column수 20개
+- Column수 20개
 
-Row  7043개
+- Row수  7043개
 
-Churn(가입 해지율) 비율
-[Unchurn 73%, Churn 27%]
+- Churn(가입 해지율) 비율
+- [Unchurn 73%, Churn 27%]
 
-데이터 출처 = https://www.kaggle.com/datasets/kapturovalexander/customers-churned-in-telecom-services
+- 데이터 출처 = https://www.kaggle.com/datasets/kapturovalexander/customers-churned-in-telecom-services
 <br/>
 <br/>
 
