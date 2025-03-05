@@ -112,7 +112,7 @@ MonthToMonth 만들어서 1년 계약이랑 2년 계약 합치면서 0이랑 1�
 
 **박예슬** : <br/>
 
-널값채움 : TotalCharges (mean으로 채움)<br/>
+NULL값채움 : TotalCharges (mean으로 채움)<br/>
 라벨인코딩 : <br/>
 'StreamingTV', 'StreamingMovies', 'OnlineSecurity', 'OnlineBackup','DeviceProtection' -> 원핫인코딩 했을때보다 라벨인코딩 했을때 값이 좋았음<br/>
 'gender', 'Partner', 'Dependents','PhoneService', 'PaperlessBilling','Churn' -> 칼럼값이 2개여서 라벨인코딩함<br/>
@@ -136,7 +136,6 @@ Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 - 데이터 셋을 정한 후, 각 팀원들이 개별 모델을 개발하여 자유롭게 예측 및 학습<br/>
 - 전처리 과정후 가장 좋은 전처리 과정을 수행한 팀원의 방식을을 다른 팀원들과 동일하게 적용 예정<br/>
 <br/>
-<br/>
 
 ### 2.1 문제인식 및 해결 방법
 
@@ -157,14 +156,6 @@ Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 ### 3.1 화면 개발 과정
 ![image](https://private-user-images.githubusercontent.com/133230306/419259804-b85ed2c0-9083-4db9-96c4-fe05842ccae8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExNDAzOTMsIm5iZiI6MTc0MTE0MDA5MywicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjU5ODA0LWI4NWVkMmMwLTkwODMtNGRiOS05NmM0LWZlMDU4NDJjY2FlOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMjAxMzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NTJlMWU4MGUyOTczOTNkMDc0NDFjZjYzZTBkZDY1ZTAxMDY3ZmFjMTM4MGU4NDgxNTlmYTEzMTdjMTRlNjI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.MDLkuyJvd3-cQmEB07T4Ct1d30zv9KlKPVRtiUuRFqA)<br/>
 
-
-혼동행렬<br/>
-
-recall값<br/>
-
-모델별 이탈율 예측 스코어<br/>
-
-실제이탈 고객 예상 확률 높음<br/>
 
 
 ## 4 결과 및 결론
@@ -195,7 +186,7 @@ recall값<br/>
 
 **최수헌** :<br/>
 
-**남궁승원** :<br/>
+**남궁승원** :<br/> 데이터 전처리 과정에서 미숙함으로 인해 epoch 적용을 못했고, 전처리 과정에서 체계적으로 하기 보단 떠오르는대로 너무 막 해서 과정이 기억에 잘 안남고 깔끔하지 않고 지저분하게 됐다. 전처리와 EDA 관련 추가 학습과 더 많은 경험을 통해 해결해야 할 것 같다<br/> 
 
 **박예슬** :<br/>
 
@@ -213,7 +204,7 @@ recall값<br/>
 
 **최수헌** :<br/>
 
-**남궁승원** :<br/>
+**남궁승원** :<br/> 부족한 실력으로 좀 부족한 결과물이 나왔지만, 팀장님과 다른 팀원들의 도움으로 마무리 할 수 있었고, 좀 더 학습해서 체계적이고 깔끔하게 분석하는쪽으로 발전 해야한다고 느꼈다.<br/> 
 
 **박예슬** :<br/>
 
