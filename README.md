@@ -101,6 +101,8 @@ Churn(가입 해지율) 비율
 [Unchurn 73%, Churn 27%]
 
 데이터 출처 = https://www.kaggle.com/datasets/kapturovalexander/customers-churned-in-telecom-services
+<br/>
+<br/>
 
 ### 1.1 데이터 분석 및 전처리
 **신정우** : 
@@ -154,12 +156,15 @@ MonthToMonth 만들어서 1년 계약이랑 2년 계약 합치면서 0이랑 1�
 상관관계 분석 (Heatmap으로 주요 변수 간 관계 확인)<br/>
 Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 총 청구 금액을 가입 개월 수로 나누어 AvgMonthlyCharge(평균 월 청구 금액) 생성<br/>
-
+<br/>
+<br/>
 
 ## 2 분석 방향 및 초기 계획
 
 - 데이터 셋을 정한 후, 각 팀원들이 개별 모델을 개발하여 자유롭게 예측 및 학습<br/>
 - 전처리 과정후 가장 좋은 전처리 과정을 수행한 팀원의 방식을을 다른 팀원들과 동일하게 적용 예정<br/>
+<br/>
+<br/>
 
 ### 2.1 문제인식 및 해결 방법
 
