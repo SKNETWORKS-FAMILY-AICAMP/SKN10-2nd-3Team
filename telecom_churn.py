@@ -2,53 +2,45 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import shap
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
+import shap
 from xgboost import XGBClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, log_loss
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, log_loss, confusion_matrix, roc_curve, auc
 from imblearn.over_sampling import SMOTE
 
+# 여기에 자신의 .csv경로를 입력하고 타겟 컬럼이름으로 수정해야합니다.
+########################################################################################
 # 데이터 로드 및 전처리
-df = pd.read_csv("customer_churn_telecom_services.csv")
-df.columns = [col.lower() for col in df.columns]
+df = pd.read_csv("my_dataset.csv")  # 데이터 셋 경로
 
-df["churn"] = df["churn"].map({"No": 0, "Yes": 1})
-df["totalcharges"] = df["totalcharges"].replace(" ", np.nan).astype(float)
-df.loc[:, "totalcharges"] = df["totalcharges"].fillna(df["totalcharges"].median())
+df = df.drop(columns=["Unnamed: 0"])
 
-label_cols = ["gender", "partner", "dependents", "phoneservice", "paperlessbilling"]
-for col in label_cols:
-    df[col] = LabelEncoder().fit_transform(df[col])
-
-one_hot_cols = ["multiplelines", "internetservice", "onlinesecurity", "onlinebackup",
-                "deviceprotection", "techsupport", "streamingtv", "streamingmovies",
-                "contract", "paymentmethod"]
-df = pd.get_dummies(df, columns=one_hot_cols, drop_first=True)
-
-# 1년 미만 가입 고객 여부 추가
-df["is_short_tenure"] = (df["tenure"] < 12).astype(int)
-
-X = df.drop(columns=["churn"])
-y = df["churn"]
-
+X = df.drop(columns=["Churn"])  # 타겟 컬럼
+y = df["Churn"] # 타겟 컬럼
+########################################################################################
+# 아래부터는 건들지 않아도 됩니다.
 smote = SMOTE(sampling_strategy="auto", random_state=42)
 
 # Epoch 횟수 설정
-num_epochs = 5  # 🔥 여러 번 학습 (Epoch 개념 적용)
+num_epochs = 10  # 🔥 여러 번 학습 (Epoch 개념 적용)
 
 # 모델 초기화 (한 번만 실행)
 models = {
-    "Logistic Regression": LogisticRegression(),
-    "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
-    "XGBoost": XGBClassifier(eval_metric="logloss", random_state=42)
+    # "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
+    # "XGBoost": XGBClassifier(eval_metric="logloss", random_state=42),
+    # "Logistic Regression": LogisticRegression(),
 }
 
 # 결과 저장을 위한 딕셔너리
 results = {name: {"accuracy": [], "precision": [], "recall": [], "f1_score": [], "log_loss": []}
            for name in models.keys()}
+
+# 혼동 행렬 & ROC-AUC 저장
+conf_matrices = {}
+roc_curves = {}
 
 # 모델 학습 및 평가 (데이터셋만 변경, 모델 유지)
 for epoch in range(num_epochs):
@@ -67,7 +59,7 @@ for epoch in range(num_epochs):
         print(f"\n🔹 Training {name} (Epoch {epoch + 1})...")
 
         # 🔥 기존 모델 유지 & 새 데이터로 추가 학습
-        model.fit(X_train, y_train)  # 모델을 유지한 채 새로운 데이터로 학습
+        model.fit(X_train, y_train)
 
         y_pred = model.predict(X_test)
         y_pred_proba = model.predict_proba(X_test)[:, 1]
@@ -84,7 +76,13 @@ for epoch in range(num_epochs):
         results[name]["f1_score"].append(f1)
         results[name]["log_loss"].append(loss)
 
-        # 🔥 터미널에 결과 출력 추가
+        # 🔥 혼동 행렬 저장
+        conf_matrices[name] = confusion_matrix(y_test, y_pred)
+
+        # 🔥 ROC-AUC 저장
+        fpr, tpr, _ = roc_curve(y_test, y_pred_proba)
+        roc_curves[name] = (fpr, tpr, auc(fpr, tpr))
+
         print(f"✅ {name} Results (Epoch {epoch + 1}):")
         print(f"  Accuracy: {acc:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1-Score: {f1:.4f}, Log Loss: {loss:.4f}\n")
 
@@ -102,7 +100,7 @@ for metric in metrics:
     plt.grid(True)
     plt.show()
 
-# 📌 Feature Importance 분석 (RandomForest & XGBoost)
+# 📌 Feature Importance 분석
 feature_importance = {}
 
 for name, model in models.items():
@@ -119,13 +117,27 @@ for name in feature_importance:
     plt.xticks(rotation=45)
     plt.show()
 
-# 📌 SHAP 분석 (XGBoost 모델 사용)
-explainer = shap.Explainer(models["XGBoost"], X_train)
-shap_values = explainer(X_test)
+# 📌 혼동 행렬 시각화
+plt.figure(figsize=(15, 5))
+for i, (name, matrix) in enumerate(conf_matrices.items()):
+    plt.subplot(1, len(models), i + 1)
+    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", xticklabels=["No Churn", "Churn"], yticklabels=["No Churn", "Churn"])
+    plt.title(f"Confusion Matrix: {name}")
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
 
-# 📌 SHAP Summary Plot (Scatter)
-shap.summary_plot(shap_values, X_test, feature_names=X.columns.tolist())  # 🔥 Feature 이름 반영
+plt.tight_layout()
+plt.show()
 
-# 📌 SHAP Summary Plot (Bar Chart)
-shap.summary_plot(shap_values, X_test, plot_type="bar", feature_names=X.columns.tolist())  # 🔥 Feature 이름 반영
+# 📌 ROC-AUC Curve 시각화
+plt.figure(figsize=(8, 6))
+for name, (fpr, tpr, roc_auc) in roc_curves.items():
+    plt.plot(fpr, tpr, label=f"{name} (AUC = {roc_auc:.4f})")
 
+plt.plot([0, 1], [0, 1], linestyle="--", color="gray")
+plt.xlabel("False Positive Rate")
+plt.ylabel("True Positive Rate")
+plt.title("ROC-AUC Curve")
+plt.legend()
+plt.grid(True)
+plt.show()
