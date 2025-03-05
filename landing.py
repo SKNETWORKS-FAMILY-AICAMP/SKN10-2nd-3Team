@@ -23,7 +23,6 @@ elif option == "XGBoost":
     st.image("ye/f1_score.png", caption="f1 스코어")
     st.image("ye/feature_importance.png", caption="변수 중요도")
     st.image("ye/log_loss.png", caption="loss 값")
-    st.image("ye/metrics.png", caption="측정결과")
     st.image("ye/precision.png", caption="예측값")
     st.image("ye/recall.png", caption="재현률")
     st.image("ye/roc_auc_curve.png", caption="roc_auc 값")
