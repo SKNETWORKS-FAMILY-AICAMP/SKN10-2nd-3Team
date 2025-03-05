@@ -171,5 +171,6 @@ Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 
 - 개별 모델 생성후, 동일한 데이터 셋에서 복원 추출로 다른 Train 데이터셋을 여러번 산출해 반복학습하여 모델의 성능 향상<br/>
 
+![alt text](image.png)<br/>
 
 
