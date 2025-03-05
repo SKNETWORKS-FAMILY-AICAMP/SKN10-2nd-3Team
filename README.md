@@ -30,7 +30,7 @@
   </tr>
   <tr>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
-    <td align="center"><img src="C:\development\github\SKN10-2nd-3Team\images\image-1.png" width="175" height="175"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/YourUsername/YourRepository/main/images/image-1.png" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
