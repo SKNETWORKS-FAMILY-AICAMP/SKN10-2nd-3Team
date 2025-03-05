@@ -104,48 +104,48 @@ Churn(가입 해지율) 비율
 ### 1.1 데이터 분석 및 전처리
 신정우 : 
 
-TotalCharges median 값으로 결측치 제거
-Label Encoding : "gender", "partner", "dependents", "phoneservice", "paperlessbilling"
-OneHot Encoding : "multiplelines", "internetservice", "onlinesecurity", "onlinebackup",
-                    "deviceprotection", "techsupport", "streamingtv", "streamingmovies",
-                    "contract", "paymentmethod"
-1년 미만 가입 고객 여부 추가
-"df["is_short_tenure"] = (df["tenure"] < 12).astype(int)"
+TotalCharges median 값으로 결측치 제거<br/>
+Label Encoding : "gender", "partner", "dependents", "phoneservice", "paperlessbilling"<br/>
+OneHot Encoding : "multiplelines", "internetservice", "onlinesecurity", "onlinebackup",<br/>
+                    "deviceprotection", "techsupport", "streamingtv", "streamingmovies",<br/>
+                    "contract", "paymentmethod"<br/>
+1년 미만 가입 고객 여부 추가<br/>
+"df["is_short_tenure"] = (df["tenure"] < 12).astype(int)"<br/>
 
-|--------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------|<br/>
 
-최수헌 :
+최수헌 :<br/>
 
-|--------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------|<br/>
 
-남궁승원 : 
+남궁승원 : <br/>
 
-TotalCharges median 값으로 결측치 제거
-AutoPayment 컬럼 만들어서 결제 방법이 AUTO인걸 1, 아닌걸 0으로 인코딩
-OBJECT 를 카테고리 데이터로 수정
-PhoneService 컬럼 원핫 인코딩으로 No_Phoneservice, No_Multiple,Multiple로 나눔
-MonthToMonth 만들어서 1년 계약이랑 2년 계약 합치면서 0이랑 1로 인코딩
+TotalCharges median 값으로 결측치 제거<br/>
+AutoPayment 컬럼 만들어서 결제 방법이 AUTO인걸 1, 아닌걸 0으로 인코딩<br/>
+OBJECT 를 카테고리 데이터로 수정<br/>
+PhoneService 컬럼 원핫 인코딩으로 No_Phoneservice, No_Multiple,Multiple로 나눔<br/>
+MonthToMonth 만들어서 1년 계약이랑 2년 계약 합치면서 0이랑 1로 인코딩<br/>
 
-|--------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------|<br/>
 
-박예슬 : 
+박예슬 : <br/>
 
-널값채움 : TotalCharges (mean으로 채움)
-라벨인코딩 : 
-'StreamingTV', 'StreamingMovies', 'OnlineSecurity', 'OnlineBackup','DeviceProtection' -> 원핫인코딩 했을때보다 라벨인코딩 했을때 값이 좋았음
-'gender', 'Partner', 'Dependents','PhoneService', 'PaperlessBilling','Churn' -> 칼럼값이 2개여서 라벨인코딩함
-원핫인코딩(더미) : 'PaymentMethod', 'MultipleLines', 'InternetService', 'Contract', 'TechSupport'
+널값채움 : TotalCharges (mean으로 채움)<br/>
+라벨인코딩 : <br/>
+'StreamingTV', 'StreamingMovies', 'OnlineSecurity', 'OnlineBackup','DeviceProtection' -> 원핫인코딩 했을때보다 라벨인코딩 했을때 값이 좋았음<br/>
+'gender', 'Partner', 'Dependents','PhoneService', 'PaperlessBilling','Churn' -> 칼럼값이 2개여서 라벨인코딩함<br/>
+원핫인코딩(더미) : 'PaymentMethod', 'MultipleLines', 'InternetService', 'Contract', 'TechSupport'<br/>
 
-|--------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------|<br/>
 
-김재혁 : 
+김재혁 : <br/>
 
-결측값 처리 (TotalCharges 변환 및 채우기)
-연속형 변수 분포 확인 (tenure, MonthlyCharges 등 히스토그램, Boxplot 분석)
-범주형 변수 분석 (InternetService, Contract 등 Churn Rate 분석)
-상관관계 분석 (Heatmap으로 주요 변수 간 관계 확인)
-Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)
-총 청구 금액을 가입 개월 수로 나누어 AvgMonthlyCharge(평균 월 청구 금액) 생성
+결측값 처리 (TotalCharges 변환 및 채우기)<br/>
+연속형 변수 분포 확인 (tenure, MonthlyCharges 등 히스토그램, Boxplot 분석)<br/>
+범주형 변수 분석 (InternetService, Contract 등 Churn Rate 분석)<br/>
+상관관계 분석 (Heatmap으로 주요 변수 간 관계 확인)<br/>
+Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
+총 청구 금액을 가입 개월 수로 나누어 AvgMonthlyCharge(평균 월 청구 금액) 생성<br/>
 
 
 
