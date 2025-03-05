@@ -4,12 +4,13 @@
 ![Image](https://github.com/user-attachments/assets/51c829fe-ac31-471b-aa5d-092e4ad45a12)
 
 ## 프로젝트 주제
-<br/>
+
+**가입 고객 이탈 예측 조회 시스템**
 
 ## 프로젝트 목표
 
+이용 고객의 이탈율 확인 및 영향 변수 특정 & 이탈을 막기 위해 조정해야할 요소 산출출
 
-**가입 고객 이탈 예측 조회 시스템**
 <br/>
 <br/>
 ## 📅 프로젝트 기간
@@ -20,12 +21,12 @@
 ## 팀 소개
 <table>
   <tr>
-    <th>김현수</th>
-    <th>박현준</th>
-    <th>정소열</th>
-    <th>신민주</th>
-    <th>조현정</th>
-    <th>전서빈</th>
+    <th>신정우</th>
+    <th>홍승표</th>
+    <th>박예슬</th>
+    <th>최수헌</th>
+    <th>남궁승원</th>
+    <th>김재혁</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
@@ -49,32 +50,32 @@
     <th> 
       <b>프로젝트 총괄</b><br>
       <b>데이터 분석</b><br>
-      <b>모델 평가</b>
+      <b>RandomForest, LogisticRegression, XGBoost 모델</b>
     </th>
     <th>
-      <b>RF 모델 개발</b><br>
-      <b>화면 개발</b><br>
+      <b>데이터 분석</b><br>
+      <b>streamlit 화면 개발</b><br>
       <b>GitHub 업데이트</b>
     </th>
     <th>
-      <b>XGBoost 모델 개발</b><br>
-      <b>성능 분석</b><br>
+      <b>RandomForest, LGBM, XGBoost 모델 개발</b><br>
+      <b>모델 성능 분석</b><br>
       <b>화면 설계</b>
     </th>
     <th>
-      <b>ExtraTree 모델 개발</b><br>
-      <b>성능 분석</b><br>
+      <b>LightGBM 모델 개발</b><br>
+      <b>데이터 분석</b><br>
       <b>모듈화</b>
     </th>
     <th>
       <b>LightGBM 모델 개발</b><br>
       <b>성능 분석</b><br>
-      <b>화면 개발</b>
+      <b>데이터 분석</b>
     </th>
     <th>
-      <b>SVM 모델 개발</b><br>
+      <b>Ensemble 모델 개발</b><br>
       <b>성능 분석</b><br>
-      <b>화면 개발</b>
+      <b>데이터 분석</b>
     </th>
   </tr>
 </table>
@@ -94,12 +95,13 @@
 ## 1. 데이터 분석 및 전처리
 
 ### 1.1 데이터셋 개요
-| 항목 | 내용 |
-|------|------|
-| 총 고객 수 | 7,043명 |
-| 이탈률 | 26.54% |
-| 고객 유지 기간 | 0-72개월 |
-| 결측치 | TotalCharges 11건 (0.16%) |
-| 특성 수 | 원본 21개 → 최종 6개 |
+Column수 20개
+
+Row  7043개
+
+Churn(가입 해지율) 비율
+[Unchurn 73%, Churn 27%]
+
+데이터 출처 = https://www.kaggle.com/datasets/kapturovalexander/customers-churned-in-telecom-services
 
 
