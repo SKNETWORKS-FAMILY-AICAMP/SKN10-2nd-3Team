@@ -151,3 +151,37 @@ Feature Engineering (가입 기간 그룹화, 청구 금액 그룹화)<br/>
 ![image](https://private-user-images.githubusercontent.com/133230306/419249336-92ab8a61-05a2-4088-b69b-e71f3b4fbe6d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg2MjYsIm5iZiI6MTc0MTEzODMyNiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5MzM2LTkyYWI4YTYxLTA1YTItNDA4OC1iNjliLWU3MWYzYjRmYmU2ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTMyMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOThmNzVlNjlkZjgwNTkyZDk4NTRlNTA5ZDE1ZDUyZmFiZTc0MDZkNDlkOWM3M2U3MTY3ZmI0YWJlZDZmNzY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.6hmhSyZqQcKcSbvcFr03K15cwTLdH0xwzGJbt9FziGg)<br/>
 
 
+
+## 3 분석 및 학습 결과
+
+### 3.1 화면 개발 과정
+![image](https://private-user-images.githubusercontent.com/133230306/419259804-b85ed2c0-9083-4db9-96c4-fe05842ccae8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExNDAzOTMsIm5iZiI6MTc0MTE0MDA5MywicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjU5ODA0LWI4NWVkMmMwLTkwODMtNGRiOS05NmM0LWZlMDU4NDJjY2FlOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMjAxMzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NTJlMWU4MGUyOTczOTNkMDc0NDFjZjYzZTBkZDY1ZTAxMDY3ZmFjMTM4MGU4NDgxNTlmYTEzMTdjMTRlNjI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.MDLkuyJvd3-cQmEB07T4Ct1d30zv9KlKPVRtiUuRFqA)<br/>
+
+
+혼동행렬<br/>
+
+recall값<br/>
+
+모델별 이탈율 예측 스코어<br/>
+
+실제이탈 고객 예상 확률 높음<br/>
+
+
+## 4 결과 및 결론
+
+- 가장 score(precision)값이 높은 모델:<br/>
+
+- 가장 고객 이탈율에 영향을 주는 feature들:<br/>
+
+**Logistic Regression**
+- <br/>
+
+**Random Forest**
+- <br/>
+
+**LightGBM**
+- <br/>
+
+**XGBoost**
+- <br/>
+
