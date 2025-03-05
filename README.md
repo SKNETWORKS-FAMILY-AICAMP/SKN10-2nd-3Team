@@ -37,44 +37,44 @@
     <td align="center"><img src="https://github.com/user-attachments/assets/1d56cc60-e0d5-401b-b365-3f38f25bed43" width="175" height="175"></td>
   </tr>
   <tr>
-    <th>팀장</th>
-    <th>팀원</th>
-    <th>팀원</th>
-    <th>팀원</th>
-    <th>팀원</th>
-    <th>팀원</th>
+    <td align="center"><b>팀장</b></td>
+    <td align="center"><b>팀원</b></td>
+    <td align="center"><b>팀원</b></td>
+    <td align="center"><b>팀원</b></td>
+    <td align="center"><b>팀원</b></td>
+    <td align="center"><b>팀원</b></td>
   </tr>
   <tr>
-    <th> 
+    <td align="center">
       <b>프로젝트 총괄</b><br>
       <b>데이터 분석</b><br>
       <b>RandomForest, LogisticRegression, XGBoost 모델</b>
-    </th>
-    <th>
+    </td>
+    <td align="center">
       <b>데이터 분석</b><br>
       <b>streamlit 화면 개발</b><br>
       <b>GitHub 업데이트</b>
-    </th>
-    <th>
+    </td>
+    <td align="center">
       <b>RandomForest, LGBM, XGBoost 모델 개발</b><br>
       <b>모델 성능 분석</b><br>
       <b>화면 설계</b>
-    </th>
-    <th>
+    </td>
+    <td align="center">
       <b>LightGBM 모델 개발</b><br>
       <b>데이터 분석</b><br>
       <b>모델 성능 업그레이드</b>
-    </th>
-    <th>
+    </td>
+    <td align="center">
       <b>LightGBM 모델 개발</b><br>
       <b>모델 성능 업그레이드</b><br>
       <b>데이터 분석</b>
-    </th>
-    <th>
+    </td>
+    <td align="center">
       <b>Ensemble 모델 개발</b><br>
       <b>모델 성능 업그레이드</b><br>
       <b>데이터 분석</b>
-    </th>
+    </td>
   </tr>
 </table>
 
