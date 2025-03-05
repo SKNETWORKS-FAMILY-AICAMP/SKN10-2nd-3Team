@@ -31,7 +31,7 @@ num_epochs = 10  # 🔥 여러 번 학습 (Epoch 개념 적용)
 models = {
     # "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     # "XGBoost": XGBClassifier(eval_metric="logloss", random_state=42),
-    # "Logistic Regression": LogisticRegression(),
+    "Logistic Regression": LogisticRegression(),
 }
 
 # 결과 저장을 위한 딕셔너리
@@ -106,6 +106,8 @@ feature_importance = {}
 for name, model in models.items():
     if hasattr(model, "feature_importances_"):  # RandomForest, XGBoost 지원
         feature_importance[name] = model.feature_importances_
+    elif hasattr(model, "coef_"):  # Logistic Regression 지원
+        feature_importance[name] = np.abs(model.coef_[0])  # 절댓값으로 중요도 변환
 
 for name in feature_importance:
     sorted_idx = np.argsort(feature_importance[name])[::-1]
