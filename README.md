@@ -29,52 +29,24 @@
     <th>김재혁</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249517-77a8d10c-aa29-4398-af51-2acaff1e118e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg2MjYsIm5iZiI6MTc0MTEzODMyNiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5NTE3LTc3YThkMTBjLWFhMjktNDM5OC1hZjUxLTJhY2FmZjFlMTE4ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTMyMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZmM2ZGMyM2E2Y2UzZjJkZGQxZGVkZTRlNzQ1MzJjOTA2YTg3MWQ4YWUxZGRlNTM3ZDUwODI2OTkxZjgwODhmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gyfnTHMuiJPQ6Ka4iFxxmHY8UloMYabvZqbnvvoCVoo" width="175" height="175"></td>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249369-1b7d25d0-7a5b-4753-ad71-0b6ee999458d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg2MjYsIm5iZiI6MTc0MTEzODMyNiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5MzY5LTFiN2QyNWQwLTdhNWItNDc1My1hZDcxLTBiNmVlOTk5NDU4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTMyMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YTIwNmJjNzJjNGQ3OGJmOWM3NDczNmMwMDJjMzNmNTk2ZmM4YmMxODFhMjRjOWQ3ZTQ5Mzc3ODkwY2E5ODczJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7IBr56k7hO4ugqXYk1AQzCL3mmqdn8SdQ0JjxT_RjJw" width="175" height="175"></td>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249897-af198527-3b28-4c07-9953-3ed7b88de5f2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg4ODYsIm5iZiI6MTc0MTEzODU4NiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5ODk3LWFmMTk4NTI3LTNiMjgtNGMwNy05OTUzLTNlZDdiODhkZTVmMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTM2MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MDYxMDliMjE5ZGI1ZjhiOGYzNDE1N2Y5ZWU4ZDVjZDUyN2E2M2U1MjhiZDdiYzMxNjE3NDRhNmJiMjIyYzVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jU5ZtqucppUZsBCAjtdyVleX51UZkQfy9vhfceDJPco" width="175" height="175"></td>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249796-fc6cab04-415f-41cb-a536-aac4dcc0d490.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg2MjYsIm5iZiI6MTc0MTEzODMyNiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5Nzk2LWZjNmNhYjA0LTQxNWYtNDFjYi1hNTM2LWFhYzRkY2MwZDQ5MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTMyMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMzgxODY4OGIwNjgwNDM5NGU3NTg5M2FkN2I2NjE4NDM0NmUyMmUyNzE3MDkzNTRmZjM4MzRjNjk3MzM3ZTY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.QA8cZW3W75oHHKKEHL3rihSX9spM0u9ShGV-EjhzzjI" width="175" height="175"></td>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419254613-f66681ef-323b-4c8a-ae24-e75e1d3765e1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkwMDUsIm5iZiI6MTc0MTEzODcwNSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjU0NjEzLWY2NjY4MWVmLTMyM2ItNGM4YS1hZTI0LWU3NWUxZDM3NjVlMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTM4MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzkwYWI5MDNkNjgxMGI4MTYxOGM0YWY0MGU0Y2MzNTg5NjVlZWRiYzFlMzJjNzJkOTdhNjJkNTU4MDc1OGQyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.KDDjz_XgjjvQjbsFHFKMhwaNvACSQ5X-d7w5kCqXAcE" width="175" height="175"></td>
-    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249668-3522df42-2e99-43a0-85bb-a471df72655b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzg4ODYsIm5iZiI6MTc0MTEzODU4NiwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5NjY4LTM1MjJkZjQyLTJlOTktNDNhMC04NWJiLWE0NzFkZjcyNjU1Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTM2MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWNlY2I1NmUzN2IxMmZjZGRiMzAxNTkwMzlmZjExY2Q0YmJiZWQ2MGE3ZDYwN2QyNDNiZDgzMGMyZTU4Mjk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2QuQG59sa6x918sxBiBUkGyhx3xV2KiXJN96xyiV178" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249517-77a8d10c-aa29-4398-af51-2acaff1e118e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5NTE3LTc3YThkMTBjLWFhMjktNDM5OC1hZjUxLTJhY2FmZjFlMTE4ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NGVlZGE0M2JkN2UyMGZjMDEyMTVlNjJlNWE4YWEyMGMwYTkwZDIxZWVjNmRlNmM1MmUxYjRhZWJhMGE3NTdjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.aIKvzHnvtjItRjwqfxtc2_8dwzGvnjbVTazBUPDGmY0" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249369-1b7d25d0-7a5b-4753-ad71-0b6ee999458d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5MzY5LTFiN2QyNWQwLTdhNWItNDc1My1hZDcxLTBiNmVlOTk5NDU4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OThmZDRkOTJjZmM2OWI0MmQ2OTY2MTdjNTEyY2FkMWJmNGNjZjRlZjNlMDVjYTE0ZTIyMDVlNzIyZDAwNzZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.a3CXpgW8yoMoT64YlXMKxFwdvIerMVAfTo37PkUPnPA" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249897-af198527-3b28-4c07-9953-3ed7b88de5f2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5ODk3LWFmMTk4NTI3LTNiMjgtNGMwNy05OTUzLTNlZDdiODhkZTVmMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZWRiZjBhNDEyNTRjMzZkYWNhNmNkYWFhM2U3ZmIwZGFhZjEwMGI1MDFlMzRkMTcwYjY4ZThhMGU1YTdhNzJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.yzU4GZ6UhR0uaKNe7wS5QjO0s3AFo_uDBCjyJTt6G98" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249796-fc6cab04-415f-41cb-a536-aac4dcc0d490.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5Nzk2LWZjNmNhYjA0LTQxNWYtNDFjYi1hNTM2LWFhYzRkY2MwZDQ5MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ZmJkNmVmM2ZlZDUzOWVjZDM4MWFjYTMxMjI0MTY5ZmI5ODI2NjM1YWEyY2U4Njk4YmE3OTc5NDMwYjliMzZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HpB96k_oQ59JLOIFQtkq0yC03qCVatGQ4jidLafqrZE" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419254613-f66681ef-323b-4c8a-ae24-e75e1d3765e1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjU0NjEzLWY2NjY4MWVmLTMyM2ItNGM4YS1hZTI0LWU3NWUxZDM3NjVlMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNmFjOTdhNjVkY2VjZDA5MDI1NTgxM2U3MzIwZmFhNDkxN2NlNTE0MzhjNGY4MjliMmI1ODU5MWE4M2E0NDUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pSfyF7pruQ59-CIJkuYgp3kckfgYGqmymSTn7Y3tm3Q" width="175" height="175"></td>
+    <td align="center"><img src="https://private-user-images.githubusercontent.com/133230306/419249668-3522df42-2e99-43a0-85bb-a471df72655b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMzkyNjEsIm5iZiI6MTc0MTEzODk2MSwicGF0aCI6Ii8xMzMyMzAzMDYvNDE5MjQ5NjY4LTM1MjJkZjQyLTJlOTktNDNhMC04NWJiLWE0NzFkZjcyNjU1Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwNVQwMTQyNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzk2MjhjNTYyNGEzZjUyMDRlNTA2MTQ5NGFmZGQzZTVhODhjMWY4YzQwNjZlMzVlNWRhNWJiNGEzYzJhM2MyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.rcyY0DVQtv2jx85HKpCUDOKcGLmteO0ZS3T-LQ7pAHoL" width="175" height="175"></td>
   </tr>
   <tr>
     <td align="center"><b>팀장</b></td>
-    <td align="center"><b>팀원</b></td>
-    <td align="center"><b>팀원</b></td>
-    <td align="center"><b>팀원</b></td>
-    <td align="center"><b>팀원</b></td>
-    <td align="center"><b>팀원</b></td>
+    <td align="center" colspan="5"><b>팀원</b></td>
   </tr>
   <tr>
-    <td align="center">
-      <b>프로젝트 총괄</b><br>
-      <b>데이터 분석</b><br>
-      <b>RandomForest, LogisticRegression, XGBoost 모델</b>
-    </td>
-    <td align="center">
-      <b>데이터 분석</b><br>
-      <b>streamlit 화면 개발</b><br>
-      <b>GitHub 업데이트</b>
-    </td>
-    <td align="center">
-      <b>RandomForest, LightGBM, XGBoost 모델 개발</b><br>
-      <b>모델 성능 분석</b><br>
-      <b>화면 설계</b>
-    </td>
-    <td align="center">
-      <b>LightGBM 모델 개발</b><br>
-      <b>데이터 분석</b><br>
-      <b>모델 성능 업그레이드</b>
-    </td>
-    <td align="center">
-      <b>LightGBM 모델 개발</b><br>
-      <b>모델 성능 업그레이드</b><br>
-      <b>데이터 분석</b>
-    </td>
-    <td align="center">
-      <b>Ensemble 모델 개발</b><br>
-      <b>모델 성능 업그레이드</b><br>
-      <b>데이터 분석</b>
-    </td>
+    <td align="center"><b>프로젝트 총괄</b><br>데이터 분석<br>RandomForest, LogisticRegression, XGBoost 모델</td>
+    <td align="center">데이터 분석<br>streamlit 화면 개발<br>GitHub 업데이트</td>
+    <td align="center">RandomForest, LightGBM, XGBoost 모델 개발<br>모델 성능 분석<br>화면 설계</td>
+    <td align="center">LightGBM 모델 개발<br>데이터 분석<br>모델 성능 업그레이드</td>
+    <td align="center">LightGBM 모델 개발<br>모델 성능 업그레이드<br>데이터 분석</td>
+    <td align="center">Ensemble 모델 개발<br>모델 성능 업그레이드<br>데이터 분석</td>
   </tr>
 </table>
 
